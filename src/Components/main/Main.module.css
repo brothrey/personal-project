@@ -21,6 +21,7 @@
 }
 .about h3 {
   font-size:45px;
+  color:var(--main-magenta)
 }
 
 .education{
