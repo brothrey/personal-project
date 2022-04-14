@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Bottom from "./Components/bottom/Bottom";
+import Main from "./Components/main/Main";
+import Top from "./Components/nav/Top";
+import Cookies from "./Components/UI/Cookies";
 
-function App() {
+const App = () => {
+  const [isAccepted, setIsAccepted] = useState(
+    JSON.parse(localStorage.getItem("is-accepted"))
+  );
+
+  const hideDetails = () => {
+    localStorage.setItem("is-accepted", JSON.stringify(true));
+    setIsAccepted(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Top />
+      <Main />
+      {!isAccepted && <Cookies onClick={hideDetails} />}
+      <Bottom />
     </div>
   );
-}
+};
 
 export default App;

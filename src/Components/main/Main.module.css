@@ -1,0 +1,39 @@
+.main {
+  margin-top: 50px;
+  padding: 20px;
+  min-height: 79vh;
+  color: var(--main-orange)
+}
+
+.about{
+  
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+}
+.about div{
+  background-color: var(--main-darkblue);
+  border-radius: 10px;
+  text-align: center;
+  width:280px;
+  padding:5px;
+  font-size:25px;  
+}
+.about h3 {
+  font-size:45px;
+}
+
+.education{
+  
+  display:flex;
+  flex-flow:column;
+  justify-content: space-around;
+}
+.education div{
+  background-color: var(--main-darkblue);
+  border-radius: 10px;
+  text-align: center;
+  margin:5px;
+  padding:5px;
+  font-size:20px;  
+}
