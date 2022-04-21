@@ -5,7 +5,7 @@ const Bottom = () => {
     <div className={classes.bottom}>
       <a>Sample Footer</a>
       <p>Terms of Agreement</p>
-      <p>Created by A.S.</p>
+      <p>Cache&Cookies</p>
     </div>
   );
 };

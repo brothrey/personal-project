@@ -2,13 +2,12 @@ import { Fragment } from "react";
 import classes from "../main/Main.module.css";
 const About = () => (
   <Fragment>
-    <h1>About Me</h1>
     <div className={classes.about}>
       <div>
         <h3>Who am I?</h3>
 
         <p>
-          My name is Adrian. <br></br>I am a sociable person, who like working
+          My name is Adrian. <br></br>I am a sociable person, who likes working
           in teams. I am also well-organized and I like prioritising tasks in
           order to obtain the best results.
         </p>

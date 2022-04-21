@@ -6,26 +6,28 @@
 }
 
 .about{
-  
+  margin-top:25px;
   display:flex;
   flex-flow:row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
+
 .about div{
   background-color: var(--main-darkblue);
   border-radius: 10px;
   text-align: center;
   width:280px;
   padding:5px;
-  font-size:25px;  
+  font-size:20px;  
 }
 .about h3 {
-  font-size:45px;
+  font-size:40px;
   color:var(--main-magenta)
 }
 
 .education{
-  
+  margin-top:25px;
   display:flex;
   flex-flow:column;
   justify-content: space-around;
@@ -35,6 +37,6 @@
   border-radius: 10px;
   text-align: center;
   margin:5px;
-  padding:5px;
+  padding:20px;
   font-size:20px;  
 }

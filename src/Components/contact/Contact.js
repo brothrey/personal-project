@@ -2,7 +2,7 @@ import { useState } from "react";
 import classes from "./Contact.module.css";
 import ModalWrapper from "./ModalWrapper";
 
-const Contact = () => {
+const Contact = (props) => {
   const [isShown, setIsShown] = useState(false);
   const showDetails = () => {
     setIsShown(true);
@@ -16,7 +16,9 @@ const Contact = () => {
       <button onClick={showDetails} className={classes.dropbtn}>
         Contact
       </button>
-      {isShown && <ModalWrapper onClick={hideDetails}></ModalWrapper>}
+      {isShown && (
+        <ModalWrapper onClick={hideDetails} data={props.data}></ModalWrapper>
+      )}
     </div>
   );
 };
